@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-xanthic-buffalo.sh
-        container: qc.acc_wiggy-scarlet-eleuth
+        - /usr/bin/env sh .sqa/script.hasty-tangerine-chameleon.sh
+        container: qc.acc_cranky-buff-liger
   QC.Doc:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-tangerine-havanese.sh
-        container: qc.doc_geeky-xanthic-urchin
+        - /usr/bin/env sh .sqa/script.silly-pink-crab.sh
+        container: qc.doc_squeaky-olivine-skunk
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-chartreuse-crocodile.sh
-        container: qc.doc_flabby-aquamarine-greyhound
+        - /usr/bin/env sh .sqa/script.fuzzy-tomato-antelope.sh
+        container: qc.doc_sloppy-pear-rat
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-lavender-echidna.sh
-        container: qc.doc_blurry-lemon-spider
+        - /usr/bin/env sh .sqa/script.freaky-eggplant-hyrax.sh
+        container: qc.doc_cranky-zucchini-spitz
   QC.Lic:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-alizarin-buzzard.sh
-        container: qc.lic_woozy-maroon-foxhound
+        - /usr/bin/env sh .sqa/script.pokey-lilac-hamster.sh
+        container: qc.lic_squeaky-firebrick-birman
   QC.Sty:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-brown-kiwi.sh
-        container: qc.sty_lovely-wheat-burmese
+        - /usr/bin/env sh .sqa/script.stuffy-yellow-buzzard.sh
+        container: qc.sty_droopy-sapphire-gopher
   QC.Ver:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-mauve-oriole.sh
-        container: qc.ver_ready-ultramarine-pinscher
+        - /usr/bin/env sh .sqa/script.squeaky-harlequin-sparrow.sh
+        container: qc.ver_wheezy-white-scorpion
 timeout: 5400
