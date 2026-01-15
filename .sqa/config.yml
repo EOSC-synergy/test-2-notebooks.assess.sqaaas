@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: feature/pynblint
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    gitlab.a.incd.pt/palomoIFCA/test-2-notebooks:
+      branch: main
+      repo: https://gitlab.a.incd.pt/palomoIFCA/test-2-notebooks
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-xanthic-buffalo.sh
+        container: qc.acc_wiggy-scarlet-eleuth
+  QC.Doc:
+    repos:
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-tangerine-havanese.sh
+        container: qc.doc_geeky-xanthic-urchin
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
+        commands:
+        - /usr/bin/env sh .sqa/script.trippy-chartreuse-crocodile.sh
+        container: qc.doc_flabby-aquamarine-greyhound
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-lavender-echidna.sh
+        container: qc.doc_blurry-lemon-spider
+  QC.Lic:
+    repos:
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-alizarin-buzzard.sh
+        container: qc.lic_woozy-maroon-foxhound
+  QC.Sty:
+    repos:
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pynblint.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-brown-kiwi.sh
+        container: qc.sty_lovely-wheat-burmese
+  QC.Ver:
+    repos:
+      gitlab.a.incd.pt/palomoIFCA/test-2-notebooks get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-mauve-oriole.sh
+        container: qc.ver_ready-ultramarine-pinscher
+timeout: 5400
