@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-magenta-macaque.sh
-        container: qc.acc_squirrely-purple-mayfly
+        - /usr/bin/env sh .sqa/script.shaky-cerise-chinook.sh
+        container: qc.acc_muggy-carmine-squirt
   QC.Doc:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-flax-quetzal.sh
-        container: qc.doc_breezy-apricot-stingray
+        - /usr/bin/env sh .sqa/script.clammy-wisteria-gharial.sh
+        container: qc.doc_bumpy-chocolate-spitz
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-cerulean-worm.sh
-        container: qc.doc_queasy-ecru-bordeaux
+        - /usr/bin/env sh .sqa/script.chewy-cyan-barb.sh
+        container: qc.doc_gummy-pumpkin-hare
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-emerald-penguin.sh
-        container: qc.doc_wheezy-malachite-insect
+        - /usr/bin/env sh .sqa/script.greasy-olive-whale.sh
+        container: qc.doc_silly-cinnabar-grasshopper
   QC.Lic:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-turquoise-pinscher.sh
-        container: qc.lic_randy-razzmatazz-rottweiler
+        - /usr/bin/env sh .sqa/script.goopy-cobalt-kangaroo.sh
+        container: qc.lic_paltry-salmon-wolverine
   QC.Sty:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-salmon-squirrel.sh
-        container: qc.sty_clammy-pumpkin-toad
+        - /usr/bin/env sh .sqa/script.skimpy-cobalt-wolfhound.sh
+        container: qc.sty_grumpy-maroon-mongrel
   QC.Ver:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-russet-gar.sh
-        container: qc.ver_chummy-cobalt-zebu
+        - /usr/bin/env sh .sqa/script.blurry-peach-liger.sh
+        container: qc.ver_ready-tangerine-mist
 timeout: 5400
