@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-cream-fossa.sh
-        container: qc.acc_surly-bronze-grasshopper
+        - /usr/bin/env sh .sqa/script.gimpy-heliotrope-akbash.sh
+        container: qc.acc_scanty-auburn-octopus
   QC.Doc:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-denim-koala.sh
-        container: qc.doc_cranky-pear-duck
+        - /usr/bin/env sh .sqa/script.chummy-copper-mongoose.sh
+        container: qc.doc_crappy-periwinkle-fly
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-myrtle-jaguar.sh
-        container: qc.doc_snazzy-pear-coyote
+        - /usr/bin/env sh .sqa/script.nippy-corn-meerkat.sh
+        container: qc.doc_slimy-tangerine-ant
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-fuchsia-schnauzer.sh
-        container: qc.doc_squirrely-denim-weasel
+        - /usr/bin/env sh .sqa/script.pasty-saffron-newfoundland.sh
+        container: qc.doc_whiny-salmon-liger
   QC.Lic:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-ivory-bonobo.sh
-        container: qc.lic_skinny-ochre-retriever
+        - /usr/bin/env sh .sqa/script.jumpy-aqua-ibis.sh
+        container: qc.lic_hazy-yellow-setter
   QC.Sec:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-platinum-frigatebird.sh
-        container: qc.sec_bluesy-white-labradoodle
+        - /usr/bin/env sh .sqa/script.shabby-rose-falcon.sh
+        container: qc.sec_cheeky-eggplant-indri
   QC.Sty:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-gamboge-ragdoll.sh
-        container: qc.sty_boozy-charcoal-bat
+        - /usr/bin/env sh .sqa/script.nerdy-amaranth-turkey.sh
+        container: qc.sty_slimy-razzmatazz-hyena
   QC.Uni:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-persimmon-ostrich.sh
-        container: qc.uni_squirrely-lilac-quail
+        - /usr/bin/env sh .sqa/script.pretty-peach-forest.sh
+        container: qc.uni_lousy-razzmatazz-cockroach
   QC.Ver:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-rose-squirrel.sh
-        container: qc.ver_snazzy-olivine-ibis
+        - /usr/bin/env sh .sqa/script.thirsty-purple-terrier.sh
+        container: qc.ver_queasy-zucchini-wrasse
 timeout: 5400
