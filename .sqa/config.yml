@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-lime-affenpinscher.sh
-        container: qc.acc_squeaky-wisteria-leopard
+        - /usr/bin/env sh .sqa/script.malachite_enthusiastic_chimpanzee.sh
+        container: qc.acc_lime_hardworking_crocodile
   QC.Doc:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-amber-neanderthal.sh
-        container: qc.doc_nerdy-platinum-bombay
+        - /usr/bin/env sh .sqa/script.rust_confused_cormorant.sh
+        container: qc.doc_scarlet_fearless_python
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-saffron-cuttlefish.sh
-        container: qc.doc_bluesy-puce-wildebeest
+        - /usr/bin/env sh .sqa/script.forest_witty_penguin.sh
+        container: qc.doc_fuchsia_hopeful_catfish
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cream-burmese.sh
-        container: qc.doc_messy-khaki-impala
+        - /usr/bin/env sh .sqa/script.copper_gracious_dolphin.sh
+        container: qc.doc_ice_plucky_reindeer
   QC.Lic:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-orange-akbash.sh
-        container: qc.lic_ugly-maroon-cuttlefish
+        - /usr/bin/env sh .sqa/script.crimson_proud_narwhal.sh
+        container: qc.lic_chartreuse_vigilant_wolverine
   QC.Sec:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cobalt-opossum.sh
-        container: qc.sec_bluesy-pink-dunker
+        - /usr/bin/env sh .sqa/script.coral_practical_vulture.sh
+        container: qc.sec_polar_smart_osprey
   QC.Sty:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-lavender-drever.sh
-        container: qc.sty_sunny-copper-serval
+        - /usr/bin/env sh .sqa/script.mist_compassionate_chipmunk.sh
+        container: qc.sty_pink_loving_quoll
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-brown-woodlouse.sh
-        container: qc.sty_lovely-alizarin-husky
+        - /usr/bin/env sh .sqa/script.espresso_agile_komodo.sh
+        container: qc.sty_bronze_agile_llama
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-persimmon-falcon.sh
-        container: qc.sty_freaky-white-barracuda
+        - /usr/bin/env sh .sqa/script.powder_determined_panther.sh
+        container: qc.sty_sienna_goofy_narwhal
   QC.Uni:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-brown-jellyfish.sh
-        container: qc.uni_snippy-puce-tiger
+        - /usr/bin/env sh .sqa/script.aquamarine_dizzy_thrush.sh
+        container: qc.uni_sepia_audacious_tapir
   QC.Ver:
     repos:
       gitlab.a.incd.pt/palomoIFCA/test-2-notebooks get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-white-malamute.sh
-        container: qc.ver_queasy-chestnut-crane
+        - /usr/bin/env sh .sqa/script.seafoam_perky_kiwi.sh
+        container: qc.ver_onyx_studious_barracuda
 timeout: 5400
